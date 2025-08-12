@@ -93,3 +93,45 @@ export const GWUB: GWUB = [GREEN_SYMBOL, WHITE_SYMBOL, BLUE_SYMBOL, BLACK_SYMBOL
 // 5色
 export type WUBRG = [WhiteSymbol, BlueSymbol, BlackSymbol, RedSymbol, GreenSymbol];
 export const WUBRG: WUBRG = [WHITE_SYMBOL, BLUE_SYMBOL, BLACK_SYMBOL, RED_SYMBOL, GREEN_SYMBOL];
+
+export type Combo =
+  // 無色
+  | Colorless
+  // 単色
+  | MonoWhite | MonoBlue | MonoBlack | MonoRed | MonoGreen
+  // 2色(友好色)
+  | Azorius | Dimir | Rakdos | Gruul | Selesnya
+  // 2色(対抗色)
+  | Orzhov | Izzet | Golgari | Boros | Simic
+  // 3色(友好色)
+  | Esper | Grixis | Jund | Naya | Bant
+  // 3色(対抗色)
+  | Abzan | Jeskai | Sultai | Mardu | Temur
+  // 4色
+  | WUBR | UBRG | BRGW | RGWU | GWUB
+  // 5色
+  | WUBRG
+  // 無色
+  | Colorless
+
+const combos = [
+  // 無色
+  COLORLESS,
+  // 単色
+  MONO_WHITE, MONO_BLUE, MONO_BLACK, MONO_RED, MONO_GREEN,
+  // 2色(友好色)
+  AZORIUS, DIMIR, RAKDOS, GRUUL, SELESNYA,
+  // 2色(対抗色)
+  ORZHOV, IZZET, GOLGARI, BOROS, SIMIC,
+  // 3色(友好色)
+  ESPER, GRIXIS, JUND, NAYA, BANT,
+  // 3色(対抗色)
+  ABZAN, JESKAI, SULTAI, MARDU, TEMUR,
+  // 4色
+  WUBR, UBRG, BRGW, RGWU, GWUB,
+  // 5色
+  WUBRG,
+];
+export const chooseCombo = (): Combo => {
+  return combos[Math.floor(Math.random() * combos.length)];
+}
