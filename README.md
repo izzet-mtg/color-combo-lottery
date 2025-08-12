@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# カラーコンボ宝くじ
 
-## Getting Started
+![cd](https://github.com/izzet-mtg/random-commander-jp/actions/workflows/nextjs.yml/badge.svg)
 
-First, run the development server:
+ランダムに統率者を選ぶオラクル
+
+## 必要なもの
+
+- Node.js 18.18 以上
+- npm
+
+## 始め方
+
+まずパッケージをインストールします。
+
+```bash
+npm i
+```
+
+次のコマンドで開発サーバーを起動します。
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開発用サーバーが起動したら [http://localhost:3000](http://localhost:3000) で開くとアプリに接続できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`src/app/(site)/page.tsx` が起点です。
+もし編集したければそこから編集したい内容をたどってください。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+修正内容はブランチを切り、そこに修正内容を含めて Pull Request として出してください。
 
-## Learn More
+## 各種リンクの変更
+FAQ や連絡先といった変更されるものは `next.config.ts` の `env` にて設定しているため、適宜変更してください。
+また、 `basePath` で設定しているパスに設定している org 名を自身のものに変更してください。
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Google Search Console の verification 用ファイル削除
+`public` フォルダーに Google の Google Search Console の verification 用ファイルがあるため、こちらを削除し、自前のものに置き換えて利用してください。
