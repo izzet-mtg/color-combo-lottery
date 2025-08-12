@@ -6,7 +6,7 @@ import Lottery from "@/app/component/Lottery";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen flex items-center justify-center">
       <Lottery />
     </main>
   );
