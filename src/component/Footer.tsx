@@ -9,6 +9,7 @@ const Footer = () => (
       <a href={process.env.NEXT_PUBLIC_CONTACT_LINK}>問い合わせ</a>
       <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/faq`}>FAQ</a>
       <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/privacy-policy`}>プライバシーポリシー</a>
+      <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/human-sitemap`}>サイトマップ</a>
     </div>
     <div className="flex flex-col items-center justify-center">
       <p>
