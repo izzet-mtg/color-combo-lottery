@@ -1,0 +1,18 @@
+// Copyright (c) 2025 izzet-mtg
+// SPDX-License-Identifier: MIT
+
+import { MetadataRoute } from 'next';
+
+export const dynamic = "force-static";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const today = new Date();
+  return [
+    {
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
+      lastModified: today,
+      changeFrequency: 'daily',
+      priority: 1,
+    },
+  ]
+}
