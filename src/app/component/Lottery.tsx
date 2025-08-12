@@ -23,7 +23,13 @@ export const Lottery = ({ onClick, onError }: LotteryProps) => {
       {symbols && (
         <div className="p-8 flex justify-center flex-col gap-8">
           <div className="flex gap-1 justify-center">
-            {combo.map((symbol, index) => <img key={`color-symbol${index}`} src={symbols[symbol]} className="w-16" />)}
+            {combo.map((symbol, index) => (
+              <img
+                key={`color-symbol${index}`}
+                src={symbols[symbol]}
+                className="w-16 border border-gray-500 dark:border-0 rounded-full shadow-sm"
+              />
+            ))}
           </div>
           <button
             className="rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-medium shadow-lg max-w-xs mx-auto"
