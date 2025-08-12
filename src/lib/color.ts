@@ -114,7 +114,7 @@ export type Combo =
   // 無色
   | Colorless
 
-const combos = [
+const combos: Combo[] = [
   // 無色
   COLORLESS,
   // 単色
