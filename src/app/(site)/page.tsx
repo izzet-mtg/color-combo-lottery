@@ -1,3 +1,6 @@
+// Copyright (c) 2025 izzet-mtg
+// SPDX-License-Identifier: MIT
+
 import Image from "next/image";
 
 export default function Home() {
