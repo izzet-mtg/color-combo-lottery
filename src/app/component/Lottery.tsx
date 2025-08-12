@@ -9,10 +9,15 @@ import useSymbol from "@/hook/useSymbol";
 
 export type LotteryProps = {
   onClick?: (combo: Combo) => void;
+  onError?: (error: any) => void;
 }
-export const Lottery = ({ onClick }: LotteryProps) => {
+export const Lottery = ({ onClick, onError }: LotteryProps) => {
   const [combo, setCombo] = useState<Combo>(chooseCombo());
   const { symbols, error: useSymbolError } = useSymbol();
+  if (useSymbolError) {
+    onError?.(useSymbolError);
+    return (<div></div>);
+  }
   return (
     <div>
       {symbols && (
