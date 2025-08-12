@@ -9,7 +9,7 @@ import useSymbol from "@/hook/useSymbol";
 
 export type LotteryProps = {
   onClick?: (combo: Combo) => void;
-  onError?: (error: any) => void;
+  onError?: (error: any) => void;  // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 export const Lottery = ({ onClick, onError }: LotteryProps) => {
   const [combo, setCombo] = useState<Combo>(chooseCombo());
@@ -27,6 +27,7 @@ export const Lottery = ({ onClick, onError }: LotteryProps) => {
               <img
                 key={`color-symbol${index}`}
                 src={symbols[symbol]}
+                alt={symbol}
                 className="w-16 border border-gray-500 dark:border-0 rounded-full shadow-sm"
               />
             ))}

@@ -9,7 +9,7 @@ import { useState } from "react";
 import ErrorDialog from "../../component/ErrorDialog";
 
 export default function Home() {
-  const [error, setError] = useState<any>();
+  const [error, setError] = useState<any>(); // eslint-disable-line @typescript-eslint/no-explicit-any
   return (
     <main className="flex items-center justify-center">
       <Lottery onError={setError}/>
