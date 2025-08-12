@@ -14,5 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1,
     },
+    {
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/about-us`,
+      lastModified: today,
+      changeFrequency: 'daily',
+      priority: 0.5,
+    },
   ]
 }

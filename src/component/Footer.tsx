@@ -5,6 +5,7 @@ const Footer = () => (
   <footer className="flex flex-col flex-wrap items-center justify-center w-full dark:bg-gray-800 bg-gray-300 p-8 gap-2">
     <div className="flex gap-4 md:flex-row flex-col">
       <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/`}>ホーム</a>
+      <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-us`}>私達について</a>
     </div>
     <div className="flex flex-col items-center justify-center">
       <p>
