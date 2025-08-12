@@ -1,7 +1,5 @@
-/*
- * Copyright (c) 2025 izzet-mtg
- * SPDX-License-Identifier: MIT
- */
+// Copyright (c) 2025 izzet-mtg
+// SPDX-License-Identifier: MIT
 
 import { dirname } from "path";
 import { fileURLToPath } from "url";
