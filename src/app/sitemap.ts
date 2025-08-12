@@ -20,5 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.5,
     },
+    {
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy`,
+      lastModified: today,
+      changeFrequency: 'daily',
+      priority: 0.5,
+    },
   ]
 }
