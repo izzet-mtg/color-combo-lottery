@@ -4,14 +4,14 @@
 // SPDX-License-Identifier: MIT
 
 import Image from "next/image";
-import Lottery from "@/app/component/Lottery";
+import Lottery from "@/component/Lottery";
 import { useState } from "react";
-import ErrorDialog from "../component/ErrorDialog";
+import ErrorDialog from "../../component/ErrorDialog";
 
 export default function Home() {
   const [error, setError] = useState<any>();
   return (
-    <main className="min-h-screen flex items-center justify-center">
+    <main className="flex items-center justify-center">
       <Lottery onError={setError}/>
       {error && (
         <ErrorDialog onClose={() => setError(undefined)}>
