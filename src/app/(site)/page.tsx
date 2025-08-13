@@ -3,10 +3,20 @@
 // Copyright (c) 2025 izzet-mtg
 // SPDX-License-Identifier: MIT
 
-import Image from "next/image";
+import { Metadata } from "next";
 import Lottery from "@/component/Lottery";
 import { useState } from "react";
 import ErrorDialog from "../../component/ErrorDialog";
+
+export const metadata: Metadata = {
+  title: "ホーム",
+  description: "Magic: the Gathering の色の組合わせをランダムに表示します",
+  openGraph: {
+    title: "ホーム",
+    description: "Magic: the Gathering の色の組合わせをランダムに表示します",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
+  }
+};
 
 export default function Home() {
   const [error, setError] = useState<any>(); // eslint-disable-line @typescript-eslint/no-explicit-any
