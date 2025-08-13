@@ -6,6 +6,8 @@
 
 ## [まだリリースされていないもの]
 
+## [1.0.2] - 2025-08-13
+
 ### 修正
 
 - `use client` と `metadata` が競合していたため、コンポーネントを別ソースに切り分け
@@ -23,5 +25,6 @@
 - ファーストリリース
 
 [まだリリースされていないもの]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.1...HEAD
+[1.0.2]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/izzet-mtg/random-commander-jp/releases/tag/v1.0.0
