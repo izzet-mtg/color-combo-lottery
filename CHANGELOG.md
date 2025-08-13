@@ -6,6 +6,12 @@
 
 ## [まだリリースされていないもの]
 
+## [1.2.0] - 2025-08-13
+
+### 追加
+
+- 色の組合せ名を表示できるようにした
+
 ## [1.1.1] - 2025-08-13
 
 ### 修正
@@ -42,7 +48,8 @@
 
 - ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.1...HEAD
+[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.3...v1.1.0
 [1.0.3]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.2...v1.0.3
