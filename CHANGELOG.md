@@ -6,6 +6,8 @@
 
 ## [まだリリースされていないもの]
 
+## [1.0.3] - 2025-08-13
+
 ### 修正
 
 - マナシンボルは Image でレンダリングするようにした
@@ -28,7 +30,8 @@
 
 - ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.1...HEAD
+[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/izzet-mtg/color-combo-lottery/releases/tag/v1.0.0
