@@ -6,6 +6,12 @@
 
 ## [まだリリースされていないもの]
 
+## [1.1.1] - 2025-08-13
+
+### 修正
+
+- OGP 画像が表示されなかったのでメタデータを修正
+
 ## [1.1.0] - 2025-08-13
 
 ### 追加
@@ -36,7 +42,8 @@
 
 - ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.0...HEAD
+[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.3...v1.1.0
 [1.0.3]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.1...v1.0.2
