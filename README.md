@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/izzet-mtg/color-combo-lottery/refs/heads/main/public/logo.svg" width="30%" />
+  <img src="https://raw.githubusercontent.com/izzet-mtg/color-combo-lottery/refs/heads/main/src/asset/logo.svg" width="30%" />
 </p>
 
 # カラーコンボ宝くじ
