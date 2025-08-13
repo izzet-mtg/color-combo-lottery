@@ -10,6 +10,7 @@ const basePath = process.env.NODE_ENV === "production" ? "/color-combo-lottery" 
 const nextConfig = {
   output: "export",
   env: {
+    // お問い合わせリンク
     NEXT_PUBLIC_CONTACT_LINK: "https://forms.gle/2jK87DQ44CS2pfBR9",
     NEXT_PUBLIC_GITHUB_REPOSITORY_URL: "https://github.com/izzet-mtg/color-combo-lottery/",
     // OGP 用
