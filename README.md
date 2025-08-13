@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/izzet-mtg/color-combo-lottery/refs/heads/main/public/logo.svg" width="30%" />
+</p>
+
 # カラーコンボ宝くじ
 
 ![cd](https://github.com/izzet-mtg/random-commander-jp/actions/workflows/nextjs.yml/badge.svg)
