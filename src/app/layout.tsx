@@ -26,12 +26,11 @@ export const metadata: Metadata = {
     description: "Magic: the Gathering の色の組合わせをランダムに表示します",
     siteName: "カラーコンボ宝くじ",
     type: "website",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/ogp.png`,
-      }
-    ],
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/ogp.png`]
+  },
 };
 
 export default function RootLayout({
