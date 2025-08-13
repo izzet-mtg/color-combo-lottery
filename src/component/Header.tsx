@@ -8,7 +8,6 @@ import Logo from "@/asset/logo.svg";
 const Header = () =>  (
   <header className="flex flex-col flex-wrap w-full dark:bg-gray-800 bg-gray-600 p-4 gap-2">
     <div>
-      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
       <Link href="/" className="inline-block">
         <Image src={Logo} alt="ホームへ" width="50" height="50" />
       </Link>
