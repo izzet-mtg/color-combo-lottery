@@ -6,11 +6,18 @@
 
 ## [まだリリースされていないもの]
 
+## [1.0.1] - 2025-08-13
+
+### 修正
+
+- パスの設定を変更
+
 ## [1.0.0] - 2025-08-13
 
 ### 追加
 
-ファーストリリース
+- ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.0...HEAD
+[まだリリースされていないもの]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/izzet-mtg/random-commander-jp/releases/tag/v1.0.0
