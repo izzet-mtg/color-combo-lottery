@@ -6,18 +6,15 @@
 import { useState } from "react";
 import { chooseCombo, Combo } from "@/lib/color";
 import useSymbol from "@/hook/useSymbol";
+import ErrorDialog from "@/component/ErrorDialog";
 
 export type LotteryProps = {
   onClick?: (combo: Combo) => void;
-  onError?: (error: any) => void;  // eslint-disable-line @typescript-eslint/no-explicit-any
 }
-export const Lottery = ({ onClick, onError }: LotteryProps) => {
+export const Lottery = ({ onClick }: LotteryProps) => {
   const [combo, setCombo] = useState<Combo>(chooseCombo());
   const { symbols, error: useSymbolError } = useSymbol();
-  if (useSymbolError) {
-    onError?.(useSymbolError);
-    return (<div></div>);
-  }
+  const [error, setError] = useState<Error | undefined>(useSymbolError);
   return (
     <div>
       {symbols && (
@@ -39,6 +36,17 @@ export const Lottery = ({ onClick, onError }: LotteryProps) => {
             再選択
           </button>
         </div>
+      )}
+      {error && (
+        <ErrorDialog onClose={() => setError(undefined)}>
+          <p>以下の情報を連絡先から管理者に送信してください</p>
+          <p>(連絡先: {process.env.NEXT_PUBLIC_CONTACT_LINK})</p>
+          <div className='p-4'>
+            <div className="bg-gray-100 text-gray-800 text-sm p-4 rounded-md border border-gray-300 overflow-x-auto whitespace-pre-wrap">
+              <p className='font-bold'>エラー内容: {`${error}`}</p>
+            </div>
+          </div>
+        </ErrorDialog>
       )}
     </div>
   );
