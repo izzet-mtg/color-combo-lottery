@@ -24,7 +24,7 @@
 
 - ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.1...HEAD
-[1.0.2]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/izzet-mtg/random-commander-jp/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/izzet-mtg/random-commander-jp/releases/tag/v1.0.0
+[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.1...HEAD
+[1.0.2]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/izzet-mtg/color-combo-lottery/releases/tag/v1.0.0
