@@ -5,13 +5,11 @@
 
 import { useState } from "react";
 import { chooseCombo, Combo } from "@/lib/color";
+import Image from "next/image";
 import useSymbol from "@/hook/useSymbol";
 import ErrorDialog from "@/component/ErrorDialog";
 
-export type LotteryProps = {
-  onClick?: (combo: Combo) => void;
-}
-export const Lottery = ({ onClick }: LotteryProps) => {
+export const Lottery = () => {
   const [combo, setCombo] = useState<Combo>(chooseCombo());
   const { symbols, error: useSymbolError } = useSymbol();
   const [error, setError] = useState<Error | undefined>(useSymbolError);
@@ -21,17 +19,19 @@ export const Lottery = ({ onClick }: LotteryProps) => {
         <div className="p-8 flex justify-center flex-col gap-8">
           <div className="flex gap-1 justify-center">
             {combo.map((symbol, index) => (
-              <img
+              <Image
                 key={`color-symbol${index}`}
                 src={symbols[symbol]}
                 alt={symbol}
-                className="w-16 border border-gray-500 dark:border-0 rounded-full shadow-sm"
+                className="border border-gray-500 dark:border-0 rounded-full shadow-sm"
+                width={64}
+                height={64}
               />
             ))}
           </div>
           <button
             className="rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-medium shadow-lg max-w-xs mx-auto"
-            onClick={() => { const combo = chooseCombo(); setCombo(combo); onClick?.(combo); }}
+            onClick={() => { setCombo(chooseCombo()); }}
           >
             再選択
           </button>
