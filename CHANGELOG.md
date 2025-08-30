@@ -6,6 +6,12 @@
 
 ## [まだリリースされていないもの]
 
+## [1.2.2] - 2025-08-30
+
+### 修正
+
+- パッケージのアップデート
+
 ## [1.2.1] - 2025-08-13
 
 ### 修正
@@ -54,7 +60,8 @@
 
 - ファーストリリース
 
-[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.2.1...HEAD
+[まだリリースされていないもの]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/izzet-mtg/color-combo-lottery/compare/v1.1.0...v1.1.1
